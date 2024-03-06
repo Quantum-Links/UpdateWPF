@@ -1,0 +1,21 @@
+﻿<Window x:Class="UpdateWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="480" Width="720" WindowStyle="None" ResizeMode="NoResize" ShowInTaskbar="False" Topmost="True" WindowStartupLocation="CenterScreen" FontSize="24" Background="{x:Null}">
+    <Border CornerRadius="30" Padding="10">
+        <Border.Effect>
+            <DropShadowEffect/>
+        </Border.Effect>
+        <Border.Background>
+            <ImageBrush ImageSource="/Resources/bg.jpg"/>
+        </Border.Background>
+        <Grid>
+            <Label x:Name="label1" Content="更新中" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50" Width="420" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,400,0,0"/>
+            <ProgressBar x:Name="progressBar1" HorizontalAlignment="Center" Width="580" Margin="0,0,0,64" Height="32" VerticalAlignment="Bottom"/>
+        </Grid>
+    </Border>
+</Window>
